@@ -1,0 +1,58 @@
+.firstchildtest, .lastchildtest, .evenchildtest, .oddchildtest, .nthchildtest{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 300px;
+    width: 100%;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100px;
+}
+
+.firstchildtest .square{
+    background-color: yellow;
+}
+
+.firstchildtest .square:first-child{
+   background-color: purple;
+}
+
+.lastchildtest .square{
+    background-color: red;
+}
+
+.lastchildtest .square:last-child{
+background-color: seagreen;
+}
+
+.evenchildtest .square{
+   background-color: orangered;
+}
+
+.evenchildtest .square:nth-child(even){
+background-color: royalblue;
+}
+
+.oddchildtest .square{
+    background-color: orangered;
+ }
+ 
+ .oddchildtest .square:nth-child(odd){
+    background-color: royalblue;
+ }
+
+.nthchildtest .square{
+    background-color: turquoise;
+ }
+
+
+ .nthchildtest .square:nth-child(3n){ 
+    background-color: olive;
+ }
